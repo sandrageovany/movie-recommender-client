@@ -1,26 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h3>Movie recommender app</h3>
+        <p>under construction...</p>
       </header>
+      <Switch>
+          {/* <Route exact path={'/trips', '/'} component={AllTrips} /> */}
+          <Route exact path='/healthcheck' component={Healthcheck} />
+          </Switch>
     </div>
   );
 }
 
 export default App;
-
